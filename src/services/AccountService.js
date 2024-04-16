@@ -16,10 +16,3 @@ export const registerAccount = async (body) => {
     return response;
 }
 
-export const getJwtToken = () => {
-    const token = localStorage.getItem("token");
-    if(token === null) {
-        console.log("Token cannot be found in local storage!");
-    }
-    return token;
-}
