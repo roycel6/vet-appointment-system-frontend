@@ -68,6 +68,29 @@ export const getRequestWithToken = async (route) => {
       return null;
     });
     return response;
-
-    
 }
+
+export const deleteRequestWithToken = async (route) => {
+    const token = getJwtToken();
+    if(token === null) {
+        return null;
+    }
+    const response = await fetch(route, {
+      method: "DELETE",
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'Authorization': 'Bearer ' + token
+      }
+    }).then(response => {
+      const data = response.json().then(data => {
+        return data;
+      });
+      return data;
+    }).catch(err => {
+      console.log(err);
+      return null;
+    });
+    return response;
+
+}    
