@@ -37,6 +37,8 @@ export const sendPostRequestWithToken = async (route, body) => {
     }).then(response => {
       const data = response.json().then(data => {
         return data;
+      }).catch(e => {
+        return response;
       });
       return data;
     }).catch(err => {

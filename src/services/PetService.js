@@ -13,7 +13,7 @@ export const createPet = async (body) => {
 export const getPetsFromOwnerId = async () => {
     const payload = getJwtPayload();
     const accountId = payload.AccountId;
-    const url = ACCOUNT_ROUTE + "/" + accountId + "/pets";
+    const url = ACCOUNT_ROUTE + "/" + accountId + "/pet";
     const response = await getRequestWithToken(url); 
     return response;
 }
