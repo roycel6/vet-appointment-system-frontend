@@ -19,9 +19,11 @@ const Navbar = () => {
                               <li style={{ fontFamily: "lato", fontWeight: 600, fontSize: "20px" }}><Link to="/login">Log in</Link></li>
                 <li style={{ fontFamily: "lato", fontWeight: 600, fontSize: "20px" }}><Link to="/signup">Sign Up</Link></li>
 				<li style={{ fontFamily: "lato", fontWeight: 600, fontSize: "20px" }}><Link to="/petInfoPage">Add Pet</Link></li>
+        <li style={{ fontFamily: "lato", fontWeight: 600, fontSize: "20px" }}><Link to="/petUpdatePage">Update Pet</Link></li>
 				<li style={{ fontFamily: "lato", fontWeight: 600, fontSize: "20px" }}><Link to="/appointmentPage">Make Appointment</Link></li>
         <li style={{ fontFamily: "lato", fontWeight: 600, fontSize: "20px" }}><Link to="/viewAppointmentsPage">View Appointments</Link></li>
         <li style={{ fontFamily: "lato", fontWeight: 600, fontSize: "20px" }}><Link to="/transactionHistoryPage">View Transaction History</Link></li>
+
               </ul>
             </nav>
           </div>
