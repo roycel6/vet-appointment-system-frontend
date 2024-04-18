@@ -7,6 +7,7 @@ import PetInfoPage from "./pages/petInfoPage.jsx";
 import AppointmentPage from "./pages/appointmentPage.jsx";
 import ViewAppointmentsPage from './pages/viewAppointmentsPage.jsx';
 import TransactionHistoryPage from './pages/transactionHistoryPage.jsx';
+import PetUpdatePage from './pages/petUpdatePage.jsx';
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -21,6 +22,7 @@ function App() {
 		    <Route path="/appointmentPage" element={<AppointmentPage />} />
         <Route path="/transactionHistoryPage" element={<TransactionHistoryPage />} />
         <Route path="/viewAppointmentsPage" element={<ViewAppointmentsPage />} />
+        <Route path="/petUpdatePage" element={<PetUpdatePage />} />
         {/* Add more routes as needed */}
       </Routes>
     </Router>
